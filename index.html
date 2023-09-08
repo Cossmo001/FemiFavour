@@ -20,7 +20,8 @@
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="bx bx-moon" id="darkmode-icon"></div>
+        <div class="bx bx-moon" id="darkmode-icon">
+        </div>
 
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
@@ -38,7 +39,7 @@
                 <a href=""><i class='bx bxl-instagram-alt' ></i></a>
                 <a href="https://www.linkedin.com/in/femi-favour-49582a288/"><i class='bx bxl-linkedin' ></i></a>
             </div>   
-            <a href="" class="btn">Curriculum Vitae (CV)</a>
+            <a href="My CV Resume.pdf" class="btn">Curriculum Vitae (CV)</a>
         </div>
         <div class="profession-container">
             <div class="profession-box">
@@ -210,18 +211,23 @@
             </div>
         </div>
     <!-- Contact -->
-    <section class="contact" id="contact">\
+    <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
+        <form action="https://formspree.io/f/moqowron" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
+                <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <!-- Similarly, you can add "id," "name," and "required" attributes to the email field. -->
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Phone">
-                <input type="text" placeholder="Email Subject">
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                <!-- Here, we've added "id" and "name" attributes for the phone input field.
+                     We used "type="tel"" to indicate it's a telephone number input. -->
+                <input type="text" id="email-subject" name="email-subject" placeholder="Email Subject">
+                <!-- Similarly, add "id" and "name" attributes to the email subject input field. -->
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <!-- For the textarea, we added "name," "id," and "required" attributes. -->
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>

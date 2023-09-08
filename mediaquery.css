@@ -12,7 +12,7 @@
         height: 85.8rem;
     }
 
-    .home .profession-container .overlayc {
+    .home .profession-container .overlay {
         right: -9rem;
     }
 }
@@ -128,6 +128,7 @@
     .home{
         padding: 0 3% 23rem;
         justify-content: center;
+        text-align: center;
     }
     .home-content h3 {
         font-size: 2.6rem;
@@ -140,22 +141,32 @@
     .home-content .social-media a{
         margin: 2.5rem .75rem 3rem;
     }
-
-    .home .profession-container .overlay {
-        position: fixed;
-        left: 50%;
-        top: 70rem;
-        right: 0;
-        transform: rotate(90deg) translate(-50%, 50%) scaleY(3); 
-        border-width: 23.9rem;
-    }
-
     .home .portfolio-container {
         left: 0;
         width: 100%;
         height: 100%;
     }
-
+    .home .profession-box .profession {
+        padding: 0 13px;
+        left: auto;
+        transform-origin: 0;
+    } 
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-120px, -210px);
+    }
+    .home .profession-box .profession:nth-child(1) i {
+        margin-right: 0;
+    
+    }
+        .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(0, -335px);
+        }
+        .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-115px, -450px);
+        }
+        .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-220px, -335px);
+        }
     .home .profession-container .profession-box{
         position: fixed;
         top: 60%;
@@ -163,35 +174,22 @@
         border-radius: 0;
         width: 100%;
     }
-
-    .home .profession-box .profession {
-        padding: 0 13px;
-        left: auto;
-        transform-origin: 0;
-    }
-
-    .home .profession-box .profession:nth-child(1) {
-    transform: rotate(-90deg) translate(-120px, -210px);
-    }
-    .home .profession-box .profession:nth-child(1) i {
-    margin-right: 0;
-
-    }
-    .home .profession-box .profession:nth-child(2) {
-    transform: rotate(0deg) translate(0, -335px);
-    }
-    .home .profession-box .profession:nth-child(3) {
-    transform: rotate(90deg) translate(-115px, -450px);
-    }
-    .home .profession-box .profession:nth-child(4) {
-    transform: rotate(180deg) translate(-220px, -335px);
-    }
-    .home .profession-box .circle{
+       .home .profession-box .circle{
         position: fixed;
         width: 670px;
         height: 670px;
         z-index: -1;
-    }
+}
+
+    .home .profession-container .overlay {
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3); 
+        border-width: 23.9rem;
+        justify-items: center;
+    } 
     .about{
         flex-direction: column-reverse;
         text-align: center;
@@ -217,5 +215,54 @@
 }
 
 @media (max-width: 617px) {
-    
+    .portfolio .portfolio-container{
+        grid-template-columns: 1fr;
+         
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    #darkMode-icon {
+        right: 6rem;
+    }
+    .home {
+        padding: 0 3% 30rem;
+
+    }
+
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-110px, -220px);
+    }
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(5px, -335px);
+    }
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-105px, -440px);
+    }
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-105px, -335px);
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 365px) {
+    .about-img img {
+        width: 90vw;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
 }
