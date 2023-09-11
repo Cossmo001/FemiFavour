@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Menu Icon Toggle
+
   const menuIcon = document.querySelector('#menu-icon');
   const navbar = document.querySelector('.navbar');
 
@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     navbar.classList.toggle('active');
   });
 
-  // Select all sections and navigation links
+
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('header nav a');
 
-  // Function to add or remove 'active' class from navigation links
+
   function setActiveLink(id) {
     navLinks.forEach(link => {
       link.classList.remove('active');
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector(`header nav a[href="#${id}"]`).classList.add('active');
   }
 
-  // Scroll event listener
+
   window.addEventListener('scroll', () => {
     const top = window.scrollY;
 
@@ -34,16 +34,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    // Toggle 'sticky' class on the header
+
     const header = document.querySelector('header');
     header.classList.toggle('sticky', top > 100);
 
-    // Reset menu icon and navbar when scrolling
+
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
   });
 
-  // Initialize Swiper slider
+
   new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 50,
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  // Dark Mode Icon Toggle
+
 });
 let darkModeIcon = document.querySelector('#darkmode-icon');
 
