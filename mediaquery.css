@@ -253,7 +253,14 @@
         width: 100%;
     }
 }
-
+@media (max-width: 375px) {
+    .home-content{
+        padding-top: 7rem;
+    }
+    .profession-box{
+        padding-top: 15rem;
+    }
+}
 @media (max-width: 365px) {
     .about-img img {
         width: 90vw;
@@ -268,3 +275,13 @@
     }
 
 }
+
+@media (max-width: 320px) {
+    .home-content{
+        padding-top: 7rem;
+    }
+    .profession-box{
+        padding-top: 15rem;
+    }
+}
+
