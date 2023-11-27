@@ -253,6 +253,18 @@
         width: 100%;
     }
 }
+@media (max-width: 430px) {
+    
+    .overlay{
+        padding-top: 45rem;
+    }
+}
+@media (max-width: 414px) {
+    
+    .overlay{
+        padding-top: 37rem;
+    }
+}
 @media (max-width: 375px) {
     .home-content{
         padding-top: 7rem;
